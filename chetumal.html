@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Envíos-EC</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+   
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(18.524924, -88.308203), //Chetumal
+                zoom: 17,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({ //Fijando un marcador
+                       position: mapProp.center,
+                       map: map
+                         });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        $(document).ready(function () {
+        	 
+            
+                    var map = document.getElementById("googleMap");
+                    google.maps.event.trigger(map, 'resize');
+                    
+                
+            
+        });
+    </script>
+
+	<header>
+		<nav>
+		    <div class="nav-wrapper blue-grey darken-4">
+		      <a href="index.html" class="brand-logo"><!-- <img src="logo.PNG" alt=""> -->LOGO</a>
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <ul class="right hide-on-med-and-down">
+		        <li><a href="index.html"><i class="material-icons left iconos">home</i>Inicio</a></li>
+		        <li><a href="quienes.html"><i class="material-icons left iconos">face</i>Quienes Somos</a></li>
+		        <li><a href="servicios.html"><i class="material-icons left iconos">build</i>Servicios</a></li>
+		        <li><a href="contacto.html"><i class="material-icons left iconos">call</i>Contacto</a></li>
+		     	<li><a href="#" class="dropdown-button" href="#" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i>Sucursales</a></li>
+		     	<!-- dropdown que contiene el listado de sucursales -->
+					<ul id='dropdown1' class='dropdown-content'>
+					    <li><a href="merida.html"><i class="material-icons left">location_city</i>Mérida</a></li>
+					    <li ><a href="cancun.html"><i class="material-icons left">location_city</i>Cancún</a></li>
+					    <!-- <li class="divider"></li> -->
+					    <li class="active"><a href="#"><i class="material-icons left">location_city</i>Chetumal</a></li>
+					  </ul>
+		     	<!-- dropdown que contiene el listado de sucursales -->
+				<li><a href="rastreo.html"><i class="material-icons left">search</i>Rastreo</a></li>
+		      </ul>
+
+		      
+
+		      <ul class="side-nav" id="mobile-demo">
+		        <li><a href="inicio.html"><i class="material-icons left">home</i>Inicio</a></li>
+		        <li><a href="quienes.html"><i class="material-icons left">face</i>Quienes Somos</a></li>
+		        <li><a href="servicios.html"><i class="material-icons left">build</i>Servicios</a></li>
+		        <li><a href="contacto.html"><i class="material-icons left">call</i>Contacto</a></li>
+				<li><a href="servicios.html" class="dropdown-button" href="#" data-activates="dropdown2"><i class="material-icons left">arrow_drop_down</i>Sucursales</a></li>
+					<!-- dropdown que contiene el listado de sucursales -->
+					<ul id='dropdown2' class='dropdown-content'>
+					    <li><a href="merida.html"><i class="material-icons left">location_city</i>Mérida</a></li>
+					    <li ><a href="cancun.html"><i class="material-icons left">location_city</i>Cancún</a></li>
+					    <!-- <li class="divider"></li> -->
+					    <li class="active"><a href="#"><i class="material-icons left">location_city</i>Chetumal</a></li>
+					  </ul>
+		     	<!-- dropdown que contiene el listado de sucursales -->
+
+				<li><a href="rastreo.html"><i class="material-icons left">search</i>Rastreo</a></li>
+
+
+		      </ul>
+		    </div>
+	  	</nav>		  
+	</header>
+	<br>
+
+	<div class="container">
+		<div class="row">
+            <div class="card-panel hoverable"><h4>Sucursal Chetumal</h4></div>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem maxime dignissimos adipisci iure ducimus architecto est error officiis eos, rerum tempora, inventore perspiciatis doloribus vel! Animi, quibusdam ullam autem est.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit similique quos modi iure sit doloribus accusantium reiciendis cupiditate sapiente ipsum a, ipsam inventore consectetur id labore maxime, recusandae nihil alias.</p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem maxime dignissimos adipisci iure ducimus architecto est error officiis eos, rerum tempora, inventore perspiciatis doloribus vel! Animi, quibusdam ullam autem est.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit similique quos modi iure sit doloribus accusantium reiciendis cupiditate sapiente ipsum a, ipsam inventore consectetur id labore maxime, recusandae nihil alias.</p>
+			
+			<div class="col s12 m12 l12">
+	            <h4><a href="#" title="Template">Chetumal</a></h4>
+	            <!-- <div id="map-canvas">
+	            	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472.8864110683262!2d-88.30878884373264!3d18.524776400541793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba4a36c6ad22b%3A0x10415caeb764d319!2sAv.+Erick+Paolo+Mart%C3%ADnez+461%2C+Zona+Sin+Asignaci%C3%B3n%2C+Chetumal%2C+Q.R.!5e0!3m2!1ses!2smx!4v1498719351311"  frameborder="0" style="border:0" allowfullscreen></iframe>
+	            </div> -->
+	            <div id="googleMap" class="col s12 m12 l12"></div>
+	        </div>
+             
+         </div>
+	</div>
+	<footer class="blue-grey darken-4 ">
+		<div class="container">
+        <div class="row">
+          <div class="col l4 s12">
+            <h5 class="white-text">Lorem ipsum</h5>
+            <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias veniam consectetur consequatur officiis, inventore accusamus nobis libero et, ea a autem. Ullam velit fuga magnam sed incidunt, et accusantium.</p>
+            
+          </div>
+          <div class="col l4 s12">
+            <h5 class="white-text">Lorem ipsum</h5>
+            <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia veritatis cumque, neque, vero enim inventore accusamus alias explicabo ea voluptatem quod sit, quasi maxime asperiores. Dolorem voluptate eos nulla, recusandae.</p>
+            
+          </div>
+          <div class="col l4 s12" style="overflow: hidden;">
+            <h5 class="white-text">Connect</h5>
+            
+            
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        <span class="grey-text text-lighten-4" >© 2014-2017 Materialize, All rights reserved.</span>
+        <a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+        </div>
+      </div>
+	</footer>
+	
+</head>
+<body>
+	<script src="js/script.js"></script>
+</body>
+</html>
